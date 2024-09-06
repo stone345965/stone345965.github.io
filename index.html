@@ -1,5 +1,24 @@
-<html>
-<h1>hello world</h1>
-  <br>
-<p>Welcome</p>
+<!DOCTYPE html>
+<html lang="en">
+    <center>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <img src="csc106_banner.jpg">
+    <br>
+    <a href="/"><img src="home.png"></a>
+    <a style="cursor: pointer;" id="js"><img src="js.png"></a>
+    <a id="aboutme" style="cursor: pointer;"><img src="aboutme.png"></a>
+    <br> <br> <br>
+    <p id="aboutmehtml"></p>
+</body>
+<script>
+document.getElementById("js").onclick = function() { alert("Hello World"); }
+document.getElementById("aboutme").onclick = function() {
+document.getElementById("aboutmehtml").innerHTML = '<img style="width: 100px;" src="male.jpg"> <br> <h3>Welcome to my website! <br> Nothing much on here for now...</h3>';
+}
+    </script>
 </html>
